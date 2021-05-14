@@ -1,0 +1,2 @@
+You can also embed your chess games from Lichess:
+https://lichess.org/gz2cyn9F
