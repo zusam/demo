@@ -1,4 +1,5 @@
-FROM zusam:latest
+ARG BASE_IMAGE="zusam"
+FROM ${BASE_IMAGE}
 
 COPY assets /assets
 COPY define_avatar.py /usr/local/bin/define_avatar.py
