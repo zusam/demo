@@ -18,9 +18,9 @@ def define_avatar(api_key, avatar_path, API_ROOT):
             API_ROOT + "/me",
             headers={"Content-Type": "application/json", "x-auth-token": api_key},
         )
-        print(data)
         if r.status_code == requests.codes.ok:
             data = r.json()
+            print(data)
             r = requests.put(
                 API_ROOT + "/users/{}".format(data["id"]),
                 data=json.dumps({"avatar": avatar_id}),
