@@ -24,7 +24,7 @@ def define_avatar(api_key, avatar_path, API_ROOT):
                 data=json.dumps({"avatar": avatar_id}),
                 headers={"Content-Type": "application/json", "x-auth-token": api_key},
             )
-            print("define_avatar got return status: {}".format(r.status)
+            print("define_avatar got return status: {}".format(r.status))
 
 
 if __name__ == "__main__":
