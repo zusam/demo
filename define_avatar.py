@@ -5,7 +5,6 @@ import requests
 
 
 def define_avatar(api_key, avatar_path, API_ROOT):
-    print("define_avatar is using api_key: {}".format(api_key))
     r = requests.post(
         API_ROOT + "/files",
         files={"file": open(avatar_path, "rb")},
@@ -20,7 +19,6 @@ def define_avatar(api_key, avatar_path, API_ROOT):
         )
         if r.status_code == requests.codes.ok:
             data = r.json()
-            print(data)
             r = requests.put(
                 API_ROOT + "/users/{}".format(data["id"]),
                 data=json.dumps({"avatar": avatar_id}),
