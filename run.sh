@@ -25,7 +25,7 @@ sed -i -e "s|content=\"en\"|content=\"${LANG}\"|g" \
        /zusam/public/index.html
 
 cp /zusam/config /zusam/data/config
-ln -s /zusam/data/files /zusam/public/files
+ln -sfn /zusam/data/files /zusam/public/files
 /zusam/api/bin/console zusam:init "${INIT_USER}" "${INIT_GROUP}" "${INIT_PASSWORD}"
 
 if [ -n "${SUBPATH}" ]; then
