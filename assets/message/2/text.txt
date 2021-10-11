@@ -1,3 +1,3 @@
 Zusam will search in your message for URLs and embed them.
 For example, here is a video from Peertube:
-https://vidcommons.org/videos/watch/4c9cece6-68dc-45be-a657-7118a5794123
+https://vidcommons.org/w/efeEpsHSK3bzJwVLW9fh7U
