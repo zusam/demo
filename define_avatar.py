@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import random, string, json, sys, os, time
+import json
+import sys
 import requests
 
 
